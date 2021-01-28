@@ -47,7 +47,7 @@ class Solution0118_03{
 		int num=0; // answer의 크기 알기 위한 변수
 		int count=date[0]; // 일수를 비교하기 위한 변수
 		int func_count=1; // 일자에 따라 배포되는 기능의 수 세기위한 변수
-		
+		 
 		for(int j = 1; j<date.length; j++) {
 			int temp = count; // count의 값 변경이 있었는지 확인하기 위한 임시변수
 			if(count < date[j]) {
@@ -61,7 +61,7 @@ class Solution0118_03{
 			}
 			/*if(temp != count) { // 배포요일의 변화가 생겼다는 뜻. so func_count도 초기화
 				temp_answer.add(func_count);
-				func_count = 1;
+				func_count = 1;1	
 				num++;
 			 }
 			 ->지은 왈: temp랑 count가 같지 않다는게 count<date[j], 첫 번째 if문과 같은 것 
